@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
+    <main>
+        <section class="main-weather">
+            <div class="weather-cont">
+                <div class="searchbox">
+                    <input type="text" placeholder="Search a City or Country" id="searchtext">
+                    <span onclick=fetchdata()><i class="ri-search-2-line"></i></span>
+                </div>
+                <div class="temp-img">
+                    <div class="img-title">
+                        <img src="imgs/clouds.png" alt="" id="img-wea">
+                        <h2 id="status">Cloudy</h2>
+                    </div>
+                    <div class="temp">
+                        <h1 id="temps">24<span class="degree">&deg;</span></h1>
+                        <h2>Celcius</h2>
+                    </div>
+                </div>
+                <div class="h-w">
+                    <div class="humid h-w-div">
+                        <img src="imgs/humidity.png" alt="">
+                        <div class="humidity wrap">
+                            <h2 id="humid-temp">17%</h2>
+                            <h2>Humidity</h2>
+                        </div>
+                    </div>
+                    <div class="wind h-w-div">
+                        <img src="imgs/wind.png" alt="">
+                        <div class="windsp wrap">
+                            <h2 id="windspd">3.14km/h</h2>
+                            <h2>Windspeed</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="loca">
+                    <span><i class="ri-map-pin-2-line"></i></span>
+                    <h1 class="c-name">Nepal</h1>
+                </div>
+            </div>
+        </section>
+        </main>
     <script src="script.js"></script>
 </body>
 </html>
